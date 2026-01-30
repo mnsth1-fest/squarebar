@@ -26,12 +26,12 @@
   // ===== DATE =====
 
 "custom/clock": {
-  "exec": "date '+ %A %d.%m    ┇'",
+  "exec": "date '+ %A %d.%m'",
   "tooltip": true
 },
 
 "custom/vremya": {
-  "exec": "date '+ %H:%M    ┇'" ,
+  "exec": "date '+ %H:%M'" ,
   "interval": 60,
   "tooltip": true
 },
@@ -39,8 +39,8 @@
   // ===== TASKBAR =====
   "hyprland/language": {
     "format": "{}",
-    "format-uk": "Ukrainian   ┇",
-    "format-en": "English   ┇",
+    "format-uk": "Ukrainian",
+    "format-en": "English",
   },
 
   // ===== WORKSPACES =====
@@ -52,8 +52,8 @@
 
   // ===== AUDIO =====
   "pulseaudio": {
-    "format": "┇   {icon} {volume}%   ┇",
-    "format-muted": "󰝟 Muted   ┇",
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 Muted",
     "scroll-step": 5,
     "on-click": "pavucontrol",
     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -64,8 +64,8 @@
 
   // ===== NETWORK =====
   "network": {
-    "format-wifi": "  {signalStrength}%   ┇",
-    "format-ethernet": "󰈀 LAN   ┇",
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀 LAN",
     "format-disconnected": "󰤭",
     "on-click": "kitty nmtui",
     "tooltip": true
