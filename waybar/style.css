@@ -11,7 +11,7 @@
 
 /* ===== PANEL ===== */
 window#waybar {
-  background: rgba(10, 10, 10, 0.85);
+  background: rgba(10, 10, 10, 1);
   color: #eaeaea;
   margin: 0;
   padding: 0;
