@@ -48,7 +48,7 @@ $browser = firefox
 # exec-once = $terminal
 # exec-once = nm-applet &
 exec-once = waybar & hyprlock
-exec-once = nohup swaybg -i wallpapers/why2.png -m fill
+exec-once = nohup swaybg -i wallpapers/nixos.png -m fill
 
 #############################
 ### ENVIRONMENT VARIABLES ### Поки не цікаво за курсор
@@ -57,8 +57,9 @@ exec-once = nohup swaybg -i wallpapers/why2.png -m fill
 # See https://wiki.hypr.land/Configuring/Environment-variables/
 
 env = XCURSOR_THEME,Bibata-Modern-Classic
-env = XCURSOR_SIZE,24
-
+env = XCURSOR_SIZE,22
+env = HYPRCURSOR_THEME,Bibata-Modern-Classic
+env = HYPRCURSOR_SIZE,22
 
 ###################
 ### PERMISSIONS ### Не цікаво
@@ -134,7 +135,7 @@ decoration {
 # https://wiki.hypr.land/Configuring/Variables/#animations
 
 animations {
-  enabled = yes
+  enabled = no
   bezier = myBezier, 0.05, 0.9, 0.1, 1.05
   bezier = been, 0.24, 0.9, 0.25, 0.91
   bezier = been2, 0, 0.94, 0.5, 0.99

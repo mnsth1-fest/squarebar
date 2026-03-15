@@ -1,20 +1,15 @@
-#custom-vremya {
-  padding: 6px 14px;
-  margin: 6px 4px 6px 6px;
-  background-color: rgba(0,0,0,0.5);
-  color: @secondary;
-  border-radius: 50px;{
+{
   "layer": "top",
   "position": "top",
-  "height": 34,
-  "margin-top": 6,
-  "margin-left": 8,
-  "margin-right": 8,
+  "height": 25,
+  "margin-top": 5,
+  "margin-left": 3020,
+  "margin-right": 300,
 
   "modules-left": [
     "custom/clock",
     "custom/vremya",
-    "wlr/taskbar"
+    "hyprland/language"
   ],
 
   "modules-center": [
@@ -22,43 +17,40 @@
   ],
 
   "modules-right": [
-    "custom/notifications",
     "pulseaudio",
     "network",
     "battery"
   ],
 
-  // ===== DATE =====
+  "custom/logo": {
+    "format": " ",
+    "tooltip": false
+  },
 
-"custom/clock": {
-  "exec": "date '+ %A %d.%m'",
-  "tooltip": true
-},
-
-"custom/vremya": {
-  "exec": "date '+ %H:%M'",
-  "interval": 60,
-  "tooltip": true
-},
-
-  // ===== TASKBAR =====
-  "wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 18,
-    "spacing": 6,
-    "on-click": "activate",
-    "on-click-middle": "close",
+  "custom/clock": {
+    "exec": "date '+ %A %d.%m'",
+    "interval": 60,
     "tooltip": true
   },
 
-  // ===== WORKSPACES =====
+  "custom/vremya": {
+    "exec": "date '+ %H:%M'",
+    "interval": 60,
+    "tooltip": true
+  },
+
+  "hyprland/language": {
+    "format": "{}",
+    "format-uk": "Ukrainian",
+    "format-en": "English"
+  },
+
   "hyprland/workspaces": {
     "format": "{id}",
     "sort-by-number": true,
     "on-click": "activate"
   },
 
-  // ===== AUDIO =====
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": "󰝟 Muted",
@@ -70,7 +62,6 @@
     }
   },
 
-  // ===== NETWORK =====
   "network": {
     "format-wifi": "  {signalStrength}%",
     "format-ethernet": "󰈀 LAN",
@@ -79,7 +70,6 @@
     "tooltip": true
   },
 
-  // ===== BATTERY =====
   "battery": {
     "format": "{icon} {capacity}%",
     "format-charging": "󰂄 {capacity}%",

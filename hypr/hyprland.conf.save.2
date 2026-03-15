@@ -48,7 +48,7 @@ $browser = firefox
 # exec-once = $terminal
 # exec-once = nm-applet &
 exec-once = waybar & hyprlock
-exec-once = nohup swaybg -i wallpapers/why2.png -m fill
+exec-once = nohup swaybg -i wallpapers/furry.png -m fill
 
 #############################
 ### ENVIRONMENT VARIABLES ### Поки не цікаво за курсор
@@ -56,8 +56,8 @@ exec-once = nohup swaybg -i wallpapers/why2.png -m fill
 
 # See https://wiki.hypr.land/Configuring/Environment-variables/
 
-env = XCURSOR_THEME,Bibata-Modern-Classic
 env = XCURSOR_SIZE,24
+env = HYPRCURSOR_SIZE,24
 
 
 ###################
@@ -134,7 +134,7 @@ decoration {
 # https://wiki.hypr.land/Configuring/Variables/#animations
 
 animations {
-  enabled = yes
+  enabled = no
   bezier = myBezier, 0.05, 0.9, 0.1, 1.05
   bezier = been, 0.24, 0.9, 0.25, 0.91
   bezier = been2, 0, 0.94, 0.5, 0.99
@@ -261,13 +261,13 @@ bind = $mainMod, J, togglesplit, # dwindle
 bind = $mainMod, Z, exec, discord
 bind = $mainMod, X, exec, steam
 #bind = $mainMod, N, exec, flatpak run com.spotify.Client
-bind = $mainMod, L, exec, obs
+#bind = $mainMod, L, exec, flatpak run com.obsproject.Studio
 #bind = $mainMod, K, exec, flatpak run com.vscodium.codium
 #bind = $mainMod, M, exec, /home/mnsth1/PrismLauncher/install/bin/prismlauncher 
 #bind = $mainMod, T, exec, flatpak run org.torproject.torbrowser-launcher
-bind = $mainMod, J, exec, idea-oss
+bind = $mainMod, J, exec, idea
 #bind = $mainMod, G, exec, gnome-boxes 
-bind = $mainMod, P, exec, pycharm-oss
+bind = $mainMod, P, exec, pycharm
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, movefocus, l
 bind = $mainMod, right, movefocus, r
