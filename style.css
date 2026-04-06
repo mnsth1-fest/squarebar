@@ -21,14 +21,13 @@ window#waybar {
 /* ===== COMMON BLOCK STYLE ===== */
 #custom-clock,
 #custom-vremya,
-#custom-notification
 #language,
 #pulseaudio,
 #network,
 #battery {
   padding: 4px 12px;
   margin: 0 6px 0 0;
-  background: alpha(@surface, 0.35);
+  background: transparent;
   color: @secondary;
 }
 

@@ -31,7 +31,7 @@
 },
 
 "custom/vremya": {
-  "exec": "date '+ %H:%M'" ,
+  "exec": "date '+ %H:%M'",
   "interval": 10,
   "tooltip": true
 },
