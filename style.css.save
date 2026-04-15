@@ -1,0 +1,61 @@
+@import "colors.css";
+
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ===== PANEL ===== */
+window#waybar {
+  background: rgba(0, 120, 0, 0.85);
+  border-radius: 10px;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== COMMON BLOCK STYLE ===== */
+#custom-clock,
+#custom-vremya,
+#language,
+#pulseaudio,
+#network,
+#battery {
+  padding: 4px 12px;
+  margin: 0 6px 0 0;
+  color: @secondary;
+}
+
+/* Закруглення тільки для custom-clock */
+#custom-clock {
+  border-radius: 50px;
+}
+
+/* ===== CENTER / WORKSPACES ===== */
+#workspaces button {
+  padding: 6px 10px;
+  margin: 0;
+  background: transparent;
+  color: @secondary;
+  border-radius: 0px; /* за замовчуванням — прямокутні */
+}
+/* hover без зсувів */
+#workspaces button:hover {
+  color: @outline;
+}
+
+/* активний workspace */
+#workspaces button.active {
+  color: @secondary;
+  border-bottom: 3px solid @secondary;
+  padding-bottom: 3px;
+}
+
+/* ===== TOOLTIP ===== */
+tooltip {
+  background: rgba(15, 15, 15, 0.95);
+  color: @inverse_surface;
+  padding: 8px 10px;
+  border-radius: 0;
+}
